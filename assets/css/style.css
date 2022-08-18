@@ -29,8 +29,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('../assets/images/dreamstime_m_ok.jpg');
-/*     linear-gradient(rgba(12, 2, 2, 0.863), rgba(8, 5, 5, 0.6)), */
+    background-image: linear-gradient(rgba(12, 2, 2, 0.863), rgba(8, 5, 5, 0.6)), url(/assets/images/dreamstime_m_ok.jpg);
     background-position: center;
     background-size: 100% 100%;
 }
@@ -86,8 +85,7 @@ img {
 .wrapper {
     min-height: 100vh;
     background-color: rgb(20, 7, 7);
-    background-image: url('../assets/images/background.png');
-/* linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), */
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(/assets/images/background.png);
 }
 
 .search-container {
