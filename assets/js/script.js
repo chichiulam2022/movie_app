@@ -53,7 +53,7 @@ function loadMovieDetails() {
             searchList.classList.add('hide-list');
             searchInput.value = "";
             //grab data from omdbapi
-            const res = await axios.get(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=${OmdApiKey}`);
+            const res = await axios.get(`https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=${OmdApiKey}`);
             showMovieDetails(res);
 
             //pass movie ID from Omdbapi API for IMDb-API
