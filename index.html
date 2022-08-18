@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Search Your Movies</title>
+</head>
+
+<body>
+    <section class="hero .is-narrow-tablet" id="section1">
+        <div class="sign" id="intro">
+            <h1 id="intro-text-1">Ultimate<span id="letter-m">M</span><span id="letter-o">o</span><span
+                    id="letter-v">v</span><span id="letter-i">i</span><span id="letter-e">e</span> Night!
+            </h1><br><br><br><br>
+            <h1 id="intro-text-2">Click below to search <span id="letter-m">M</span><span id="letter-o">o</span><span
+                    id="letter-v">v</span><span id="letter-i">i</span><span id="letter-e">e</span><span
+                    id="letter-s">s</span>
+            </h1>
+        </div>
+        <div class="arrow">
+            <a href="#section2">
+                <div class=" arrow-el" id="arrow-one"></div>
+                <div class=" arrow-el" id="arrow-one"></div>
+                <div class="arrow-el" id="arrow-one"></div>
+            </a>
+        </div>
+    </section>
+
+    <section class="search-page" id="section2">
+        <div class="wrapper">
+            <div class="search-container">
+                <div class="search-element">
+                    <div class="logo"><span id="letter-u">U</span><span id="letter-m">M</span><span
+                            id="letter-o">o</span><span id="letter-v">v</span><span id="letter-i">i</span><span
+                            id="letter-e">e</span><span id="letter-s">s</span></div>
+                    <div>
+                        <input type="text" class="search-input" id="search-input" placeholder="Search Movie Title ..."
+                            id="movie-search-box" onkeyup="movieSearchProgress()" onclick="movieSearchProgress()">
+                    </div>
+
+                    <!--Search List-->
+                    <div class="search-list" id="search-list">
+                        <div class="search-list-item" style="display:none">
+                            <div class="search-item-thumbnail">
+                                <img id="thumbnail" src="images/dreamstime_xs_95500226.jpg">
+                            </div>
+                            <div class="search-item-info">
+                                <h3 class="search-item-title"></h3>
+                                <p lass="search-item-year"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="result-container" id="result" style="display:none">
+                    <img src=" images/dreamstime_xs_95500226.jpg" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Testing</h3>
+                        <p class="year">Testing</p>
+                        <p class="director">Testing</p>
+                        <p class="genre"><b></b>Testing</p>
+                        <p class="writer"><b></b>Testing</p>
+                        <p class="actors"><b></b>Testing</p>
+                        <p class="awards"><b></b>Testing</p>
+                        <p class="language"><b></b>Testing</p>
+                        <p class="rotten-tomatoes">Rotten Tomatoes:&nbsp<span
+                                class="rotten-tomatoes-rating"></span>&nbsp%
+                        </p>
+                        <br>
+                        <p class="plot" id="plot"><b></b>Testing</p>
+                    </div>
+
+                    <div class="history-container">
+                        <h3 class="history-title">Search History</h3>
+                        <div class="history-search-title">
+                            <p class="history-element" style="display:none"></p>
+                        </div>
+                        <button class="clear-history-btn" type="button">Clear
+                            History</button>
+                    </div>
+
+                </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
