@@ -77,6 +77,3 @@ Press Enter to create your local clone.
 ## Link:
 
 The URL of the GitHub repository .....
-
-
-© 2022 Team work Solution Sevices, Inc.
